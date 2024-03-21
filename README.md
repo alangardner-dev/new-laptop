@@ -50,7 +50,7 @@ After the install, you will be prompted to run two commands.
 
 ### Install Raycast to replace MacOS Spotlight
 
-MacOS is a quick way to open applications, perform searches for files and many other tasks. I have replaced Spotlight with [RayCast](https://www.raycast.com) because it has so many features: extensibility, snippets, integrated ChatGPT, and more.
+MacOS Spotlight is a quick way to open applications, perform searches for files, and many other tasks. I have replaced Spotlight with [RayCast](https://www.raycast.com) because it has so many features: extensibility, snippets, integrated ChatGPT, and more.
 
 ```
 brew install raycast
@@ -97,23 +97,23 @@ Download and install from [Mac App Store](https://apps.apple.com/us/genre/mac/id
 
 `System Preferences > Desktop & Dock`
 
-- Turn on Automatically hide and show Dock
-- Set Dock to the right as minimized as possible
-- Disable animate openings
-- Disable show suggested and recent apps
+- Turn on Automatically hide and show Dock.
+- Set Dock to the right as minimized as possible.
+- Disable animate openings.
+- Disable show suggested and recent apps.
 
 ### Desktop and Stage Manager
 
 `System Preferences > Desktop & Dock > Desktop and Stage Manager`
 
-- Disable "Show items" on Desktop
-- Disable "Click Wallpaper to reveal Desktop"
+- Disable "Show items" on Desktop.
+- Disable "Click Wallpaper to reveal Desktop".
 
 ### Widgets
 
 `System Preferences > Desktop & Dock > Widgets`
 
-- Disable on widgets on desktop
+- Disable Widgets on Desktop.
 
 ## Individual Application Configuration
 
@@ -121,24 +121,25 @@ Download and install from [Mac App Store](https://apps.apple.com/us/genre/mac/id
 
 Open the Finder's preferences/settings: `cmd +,`
 
-- Check "Open folders tabs instead of windows"
-- Uncheck "Show warning before changing file extensions"
-- Check "Remove items from the Trash every 30 days" (this might be better handled with Hazel)
-- Search default: change to "Search current folder"
-- Check: Menu > View > Show Path Bar
-- Check: Menu > View > Show Status Bar
+- Check "Open folders tabs instead of windows".
+- Uncheck "Show warning before changing file extensions".
+- Check "Remove items from the Trash every 30 days" (this might be better handled with Hazel).
+- Search default: change to "Search current folder".
+- Check: Menu > View > Show Path Bar.
+- Check: Menu > View > Show Status Bar.
 
 UI changes:
 
-- Remove non-essential items in Sidebar
+- Remove non-essential items in Sidebar.
 - Sort items in sidebar based on frequency of use.
 
 ### Hazel
 
-[Hazel](https://www.noodlesoft.com/hazel.php) is a Mac app that allows you to configure your
+[Hazel](https://www.noodlesoft.com/hazel.php) is "Automated Organization for Your Mac."
 
-- Configure to move any files in `Downloads` older than a 1 week to the trash.l
-- Configure so trash is emptied every 2 weeks.
+- Configure to move any files in `Downloads` older than a 1 week to the trash.
+- Configure to move any `Screenshot*` files to trash after 5 days.
+- Configure to empty trash every 2 weeks.
 
 ### VS Code
 
@@ -148,7 +149,7 @@ UI changes:
 
 ##### Extensions
 
-- See my extensions in [VS Code Extensions](extensions-vscode.md).
+- See my extensions in [VS Code Extensions](extensions-vscode.md) and command to install them via CLI.
 
 ### Warp
 
@@ -175,6 +176,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 #### Settings
 
 - Set DuckDuckGo (DDG) as default search engine.
+- Check "Use ⌘-1 through ⌘-9 to switch tabs".
+- Check "⌘-click opens a link in a new tab".
+- Uncheck "When a new tab or window opens, make it active".
+- Check "Show features for web developers" in Advanced tab.
+- Enable Vinegar in Extensions.
 
 #### Extensions
 
