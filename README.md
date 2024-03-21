@@ -2,7 +2,7 @@
 
 Documentation and scripts to quickly set up a new MacBook Laptop.
 
-- [Application Installs](#appliation-installs)
+- [Application Installs](#application-installs)
 
   - [Install Homebrew](#install-homebrew)
 
@@ -15,13 +15,12 @@ Documentation and scripts to quickly set up a new MacBook Laptop.
   - [Application Websites](#application-websites)
   - [Mac App Store Installs](#mac-app-store-installs)
 
-- [Configuration](#configuration)
-  - [System Settings](#system-settings)
-    - [Dock](#dock)
-    - [Desktop and Stage Manager](#desktop-and-stage-manager)
-    - [Widgets](#widgets)
+- [System Preferences and Settings](#system-preferences-and-settings)
+  - [Dock](#dock)
+  - [Desktop and Stage Manager](#desktop-and-stage-manager)
+  - [Widgets](#widgets)
+- [Individual Application Configuration](#individual-application-configuration)
   - [Finder](#finder)
-- [Individual Application configuration](#individual-application-configuration)
   - [Hazel](#hazel)
   - [VS Code](#vs-code)
     - [Settings](#settings)
@@ -30,8 +29,8 @@ Documentation and scripts to quickly set up a new MacBook Laptop.
     - [Install Oh-My-Zsh](#install-oh-my-zsh)
     - [Settings](#settings-1)
 - [Browser Extensions](#browser-extensions)
-  - [Safari Settings & Extensions](#safari-settings-extensions)
-  - [Firefox, Chrome Settings & Extensions](#firefox-chrome-settings-extensions)
+  - [Safari Settings and Extensions](#safari-settings-and-extensions)
+  - [Firefox, Chrome Settings and Extensions](#firefox-chrome-settings-and-extensions)
 - [SSH Keys](#ssh-keys)
 
 ## Application Installs
@@ -44,14 +43,11 @@ First, install [Homebrew](https://brew.sh/).
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-After the install, you will be prompted to run two commands (see below).
+After the install, you will be prompted to run two commands.
 
-```
-`(echo; echo 'eval "$ (/opt /homebrew/bin/brew shellenv)! ) ›> /Users/'$HOME'/.zprof
-`eval "$ (/opt/homebrew/bin/brew shellenv)"`
-```
+### Install Raycast to replace MacOS Spotlight
 
-### Install Raycast to replace MacOs Spotlight
+MacOS is a quick way to open applications, perform searches for files and many other tasks. I have replaced Spotlight with [RayCast](https://www.raycast.com) because it has so many features: extensibility, snippets, integrated ChatGPT, and more.
 
 ```
 brew install raycast
@@ -68,7 +64,7 @@ brew install raycast
 
 ## Install Apps via Brew
 
-Run this command to install apps. [See App List](list-brew-installs.txt).
+Run this command to install a list of apps. [See my list](list-brew-installs.txt).
 
 ```
 xargs brew install < ./list-brew-installs.txt
@@ -76,27 +72,25 @@ xargs brew install < ./list-brew-installs.txt
 
 ## Manual Installs
 
-### Application Websites
-
 Apps that are not available via `brew` will be installed manually. The following command will either open browser window to the App's website, download page or the latest DMG file. ([See App List](list-manual-install-apps.txt)).
+
+### Application Websites
 
 ```
 xargs open < manual-install-apps.txt
 ```
 
-#### Mac App Store Installs
+### Mac App Store Installs
 
-Download and install from App Store:
+Download and install from [Mac App Store](https://apps.apple.com/us/genre/mac/id39?mt=12):
 
-- Drafts
-- Due
-- Vinegar
+- Drafts ([website](https://getdrafts.com/), [store](https://apps.apple.com/us/app/drafts/id1236254471))
+- Due ([website](https://www.dueapp.com/), [store](https://apps.apple.com/us/app/due-reminders-timers/id390017969))
+- Vinegar Extension ([store](https://apps.apple.com/us/app/vinegar-tube-cleaner/id1591303229))
 
-## Configuration
+## System Preferences and Settings
 
-### System Settings
-
-#### Dock
+### Dock
 
 `System Preferences > Desktop & Dock`
 
@@ -105,18 +99,20 @@ Download and install from App Store:
 - Disable animate openings
 - Disable show suggested and recent apps
 
-#### Desktop and Stage Manager
+### Desktop and Stage Manager
 
 `System Preferences > Desktop & Dock > Desktop and Stage Manager`
 
 - Disable "Show items" on Desktop
 - Disable "Click Wallpaper to reveal Desktop"
 
-#### Widgets
+### Widgets
 
 `System Preferences > Desktop & Dock > Widgets`
 
 - Disable on widgets on desktop
+
+## Individual Application Configuration
 
 ### Finder
 
@@ -134,32 +130,30 @@ UI changes:
 - Remove non-essential items in Sidebar
 - Sort items in sidebar based on frequency of use.
 
-## Individual Application configuration
-
-## Hazel
+### Hazel
 
 [Hazel](https://www.noodlesoft.com/hazel.php) is a Mac app that allows you to configure your
 
 - Configure to move any files in `Downloads` older than a 1 week to the trash.l
 - Configure so trash is emptied every 2 weeks.
 
-## VS Code
+### VS Code
 
-### Settings
+#### Settings
 
 - See my settings in [VS Code Settings](settings-vscode.md).
 
-### Extensions
+##### Extensions
 
 - See my extensions in [VS Code Extensions](extensions-vscode.md).
 
-## Warp
+### Warp
 
 [Warp](https://www.warp.dev) is a terminal written in Rust with built in features for git, AI queries, etc.
 
 If you ran the [Install Apps via Brew](#install-apps-via-brew), Warp has already been installed.
 
-### Install Oh-My-Zsh
+#### Install Oh-My-Zsh
 
 > "[oh-my-zsh](https://ohmyz.sh) is a delightful, open source, community-driven framework for managing your Zsh configuration. It comes bundled with thousands of helpful functions, helpers, plugins, themes, and a few things that make you shout.."
 
@@ -167,13 +161,13 @@ If you ran the [Install Apps via Brew](#install-apps-via-brew), Warp has already
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### Settings
+#### Settings
 
 - My my settings in [Warp Settings](settings-warp.md).
 
 ## Browser Extensions
 
-### Safari Settings & Extensions
+### Safari Settings and Extensions
 
 #### Settings
 
@@ -184,7 +178,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 - Install Vinegar Extension (downloaded in [Manual Installs](#manual-installs))
   [“Vinegar”](https://apps.apple.com/us/app/vinegar-tube-cleaner/id1591303229) is a Safari extension for iPhone, iPad, and Mac that replaces the YouTube player on youtube.com with a minimal HTML player (bonus: it blocks ads).
 
-### Firefox, Chrome Settings & Extensions
+### Firefox, Chrome Settings and Extensions
 
 - Install [React Dev tools](https://react.dev/learn/react-developer-tools)
 - Install [Dark Reader](https://darkreader.org)
