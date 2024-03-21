@@ -1,6 +1,8 @@
 # New Laptop Setup
 
-Documentation and scripts to quickly set up a new MacBook Laptop.
+Documentation and scripts to quickly set up a new MacBook Laptop per my preferences and requirements. Inspired by [w3cj](https://github.com/w3cj)'s YT video: [Set up a Mac in 2024 for Power Users and Developers](https://www.youtube.com/watch?v=GK7zLYAXdDs).
+
+## TOC
 
 - [Application Installs](#application-installs)
 
@@ -32,6 +34,7 @@ Documentation and scripts to quickly set up a new MacBook Laptop.
   - [Safari Settings and Extensions](#safari-settings-and-extensions)
   - [Firefox, Chrome Settings and Extensions](#firefox-chrome-settings-and-extensions)
 - [SSH Keys](#ssh-keys)
+- [Todo](#todo)
 
 ## Application Installs
 
@@ -223,3 +226,7 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 pbcopy < ~/.ssh/id_ed25519.pub &&
 open https://github.com/settings/keys
 ```
+
+## Todo
+
+- Set up my dotfile configurations per [https://github.com/w3cj/dotfiles](https://github.com/w3cj/dotfiles)
