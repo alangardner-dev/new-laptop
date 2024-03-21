@@ -1,0 +1,11 @@
+--cask hazel
+--cask copyclip
+--cask google-chrome
+--cask firefox
+--cask imageoptim
+--cask slack
+--cask warp
+--cask whatsapp
+--cask visual-studio-code
+--cask docker
+--formula node
