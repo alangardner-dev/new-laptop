@@ -80,7 +80,7 @@ Apps that are not available via `brew` will be installed manually. The following
 ### Application Websites
 
 ```
-xargs open < manual-install-apps.txt
+xargs open < ./manual-install-apps.txt
 ```
 
 ### Mac App Store Installs

@@ -9,9 +9,10 @@
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Vscode Icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 - [Vscode Mdx](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx)
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
 ## Install via CLI
 
 ```
-xargs code --install-extension < scripts/vscode-extensions.txt
+xargs code --install-extension < ./list-vscode-ext.txt
 ```

@@ -1,3 +1,4 @@
+bradlc.vscode-tailwindcss
 codium.codium
 dbaeumer.vscode-eslint
 esbenp.prettier-vscode
