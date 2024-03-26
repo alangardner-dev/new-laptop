@@ -1,10 +1,11 @@
---cask hazel
 --cask copyclip
---cask google-chrome
+--cask docker
 --cask firefox
+--cask google-chrome
+--cask hazel
 --cask imageoptim
+--cask mongodb-compass
 --cask slack
+--cask visual-studio-code
 --cask warp
 --cask whatsapp
---cask visual-studio-code
---cask docker
