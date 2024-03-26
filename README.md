@@ -215,6 +215,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 - Advanced: Check "Show features for web developers".
 - Enable Vinegar in Extensions.
 
+- Enable "Always show Tab Bar" Menu > View
 - Enable "Show Favorite Bar" Menu > View
 - Enable "Show Status Bar" Menu > View
 
