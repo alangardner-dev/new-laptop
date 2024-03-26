@@ -94,6 +94,7 @@ Download and install from [Mac App Store](https://apps.apple.com/us/genre/mac/id
 - Due ([website](https://www.dueapp.com/), [store](https://apps.apple.com/us/app/due-reminders-timers/id390017969))
 - Vinegar Extension ([store](https://apps.apple.com/us/app/vinegar-tube-cleaner/id1591303229))
 - Hidden Bar ([Github](https://github.com/dwarvesf/hidden), [store](https://itunes.apple.com/app/hidden-bar/id1452453066))
+- Glace ([store](https://apps.apple.com/us/app/glance-quick-look-code-files/id1564688210?mt=12))
 
 ## System Preferences and Settings
 
