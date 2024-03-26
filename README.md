@@ -18,8 +18,11 @@ Documentation and scripts to quickly set up a new MacBook Laptop per my preferen
   - [Mac App Store Installs](#mac-app-store-installs)
 
 - [System Preferences and Settings](#system-preferences-and-settings)
+  - [Control Center](#control-center)
   - [Dock](#dock)
   - [Desktop and Stage Manager](#desktop-and-stage-manager)
+  - [Notifications](#notifications)
+  - [Trackpad](#trackpad)
   - [Widgets](#widgets)
 - [Individual Application Configuration](#individual-application-configuration)
   - [Finder](#finder)
@@ -59,8 +62,8 @@ brew install raycast
 ### Set up RayCast
 
 - Settings:
-  - Disable Show Spotlight search
-  - Assign Command-Space bar to Raycast
+  - Disable Show Spotlight search in System Settings > Keyboard Shortcuts > Spotlight
+  - Assign Command-Space bar to Raycast (Raycast Settings)
 - Store:
   - hiddenbar
   - Search Emoji and symbols
@@ -70,7 +73,8 @@ brew install raycast
 Run this command to install a list of apps. [See my list](list-brew-installs.txt).
 
 ```
-xargs brew install < ./list-brew-installs.txt
+xargs brew install < ./list-brew-casks.txt
+xargs brew install < ./list-brew-formula.txt
 ```
 
 ## Manual Installs
@@ -80,7 +84,7 @@ Apps that are not available via `brew` will be installed manually. The following
 ### Application Websites
 
 ```
-xargs open < ./manual-install-apps.txt
+xargs open < ./list-manual-install-apps.txt
 ```
 
 ### Mac App Store Installs
@@ -92,6 +96,19 @@ Download and install from [Mac App Store](https://apps.apple.com/us/genre/mac/id
 - Vinegar Extension ([store](https://apps.apple.com/us/app/vinegar-tube-cleaner/id1591303229))
 
 ## System Preferences and Settings
+
+### Control Center
+
+#### Modules
+
+`System Preferences > Control Center`
+
+- Turn Bluetooth "Show in Menu Bar"
+
+#### Menu Bar Only
+
+- Clock - uncheck Show Day of Week
+- Set to "Don't Show": Spotlight, Siri,
 
 ### Dock
 
@@ -107,7 +124,20 @@ Download and install from [Mac App Store](https://apps.apple.com/us/genre/mac/id
 `System Preferences > Desktop & Dock > Desktop and Stage Manager`
 
 - Disable "Show items" on Desktop.
-- Disable "Click Wallpaper to reveal Desktop".
+- Set "Click Wallpaper to reveal Desktop" to "Only in Stage Manager"
+
+### Notifications
+
+`System Preferences > Notifications`
+
+- Turn off notifications for Game Center, Home, Tips, and others as needed.
+
+### Trackpad
+
+`System Preferences > Trackpad`
+
+- "Secondary click" set to Two Fingers (default)
+- Enable "Tap to click"
 
 ### Widgets
 
@@ -121,12 +151,14 @@ Download and install from [Mac App Store](https://apps.apple.com/us/genre/mac/id
 
 Open the Finder's preferences/settings: `cmd +,`
 
-- Check "Open folders tabs instead of windows".
-- Uncheck "Show warning before changing file extensions".
-- Check "Remove items from the Trash every 30 days" (this might be better handled with Hazel).
-- Search default: change to "Search current folder".
-- Check: Menu > View > Show Path Bar.
-- Check: Menu > View > Show Status Bar.
+- General: Uncheck all of the items to show on Desktop
+- Advanced: "When performing a search" - set to "Search this Mac"
+- Advanced: Uncheck "Show warning before changing file extensions".
+- Advanced: Uncheck "Show warning before changing an extension"
+- Advanced: Uncheck "Show warning before emptying trash"
+- Search default: change to "Search this Mac".
+- Enable: Menu > View > Show Path Bar.
+- Enable: Menu > View > Show Status Bar.
 
 UI changes:
 
@@ -139,17 +171,18 @@ UI changes:
 
 - Configure to move any files in `Downloads` older than a 1 week to the trash.
 - Configure to move any `Screenshot*` files to trash after 5 days.
-- Configure to empty trash every 2 weeks.
+- Enable delete files in trash that are greater than 1 week old
+- Enable App Sweep
 
 ### VS Code
-
-#### Settings
-
-- See my settings in [VS Code Settings](settings-vscode.md).
 
 ##### Extensions
 
 - See my extensions in [VS Code Extensions](extensions-vscode.md) and command to install them via CLI.
+
+#### Settings
+
+- See my settings in [VS Code Settings](settings-vscode.md).
 
 ### Warp
 
@@ -175,12 +208,15 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 #### Settings
 
-- Set DuckDuckGo (DDG) as default search engine.
-- Check "Use ⌘-1 through ⌘-9 to switch tabs".
-- Check "⌘-click opens a link in a new tab".
-- Uncheck "When a new tab or window opens, make it active".
-- Check "Show features for web developers" in Advanced tab.
+- Search: Set DuckDuckGo (DDG) as default search engine.
+- Verify "Use ⌘-1 through ⌘-9 to switch tabs" checked
+- Verify "⌘-click opens a link in a new tab" checked
+- Verify "When a new tab or window opens, make it active" Unchecked
+- Advanced: Check "Show features for web developers".
 - Enable Vinegar in Extensions.
+
+- Enable "Show Favorite Bar" Menu > View
+- Enable "Show Status Bar" Menu > View
 
 #### Extensions
 
@@ -190,6 +226,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ### Firefox, Chrome Settings and Extensions
 
 - Install [React Dev tools](https://react.dev/learn/react-developer-tools)
+- Install [Redux DevTools](https://addons.mozilla.org/en-US/firefox/addon/reduxdevtools/)
 - Install [Dark Reader](https://darkreader.org)
 - Install [uBlock Origin](https://ublockorigin.com)
 - Install [Privacy Badger](https://privacybadger.org)

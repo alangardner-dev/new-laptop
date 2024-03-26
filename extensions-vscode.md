@@ -13,6 +13,6 @@
 
 ## Install via CLI
 
-```
+```bash
 xargs code --install-extension < ./list-vscode-ext.txt
 ```

@@ -2,7 +2,7 @@
 
 ## Settings
 
-```
+```json
 {
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
