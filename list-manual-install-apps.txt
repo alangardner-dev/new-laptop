@@ -1,4 +1,5 @@
 https://store.serif.com/en-us/account/downloads/
 https://filezilla-project.org/download.php?show_all=1
 https://download.typora.io/mac/Typora.dmg
-https://updates.sempliva.com/tiles/Tiles-latest.dmg
+https://localwp.com
+https://www.microsoft.com/en-us/edge/download?form=MA13FJ

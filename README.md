@@ -69,7 +69,9 @@ brew install raycast
 
 ## Install Apps via Brew
 
-Run this command to install a list of apps. [See my list](list-brew-installs.txt).
+See my list of [casks](list-brew-cask.txt) and [formula](list-brew-formula.txt).
+
+Run this command to install a list of apps.
 
 ```
 xargs brew install < ./list-brew-casks.txt
@@ -80,7 +82,7 @@ xargs brew install < ./list-brew-formula.txt
 
 Apps that are not available via `brew` will be installed manually. The following command will either open browser window to the App's website, download page or the latest DMG file. ([See App List](list-manual-install-apps.txt)).
 
-### Application Websites
+### Application web sitess
 
 ```
 xargs open < ./list-manual-install-apps.txt

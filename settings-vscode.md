@@ -14,6 +14,7 @@
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": "active",
   "editor.guides.highlightActiveIndentation": true,
+  "editor.inlineSuggest.suppressSuggestions": true,
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.tabSize": 2,
@@ -28,19 +29,19 @@
   "javascript.preferences.renameMatchingJsxTags": true,
 
   "prettier.printWidth": 120,
-  "editor.inlineSuggest.suppressSuggestions": true,
+  "prettier.documentSelectors": ["**/*.astro"],
   "prettier.htmlWhitespaceSensitivity": "css",
   "prettier.ignorePath": "",
   "prettier.insertPragma": false,
   "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true,
-  "prettier.useEditorConfig": false,
 
   "search.exclude": {
     "**/node_modules": true
   },
 
   "typescript.autoClosingTags": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.preferences.renameMatchingJsxTags": true,
   "typescript.tsdk": "node_modules/typescript/lib",
 
@@ -71,6 +72,9 @@
   },
   "workbench.iconTheme": "vscode-icons",
 
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -99,15 +103,37 @@
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
-  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
     //   "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+  },
+  "cSpell.userWords": [
+    "astro",
+    "astrojs",
+    "clsx",
+    "consts",
+    "daisyui",
+    "esbenp",
+    "gardnermedia",
+    "lucide",
+    "reduxjs",
+    "simplelightbox",
+    "tailwindcss",
+    "testid"
+  ],
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "redhat.telemetry.enabled": false,
+  "[php]": {
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+  },
+  "security.promptForLocalFileProtocolHandling": false,
+  "cody.autocomplete.enabled": true,
+  "php.stubs": ["*"]
 }
 ```
