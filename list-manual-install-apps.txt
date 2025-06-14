@@ -1,5 +1,13 @@
-https://store.serif.com/en-us/account/downloads/
-https://filezilla-project.org/download.php?show_all=1
-https://download.typora.io/mac/Typora.dmg
+https://www.audacityteam.org/download/mac/
+https://www.beat-app.fi/
+https://www.capcut.com/
+https://www.blackmagicdesign.com/event/davinciresolvedownload
+https://filezilla-project.org/download.php?
+https://httpie.io/download
 https://localwp.com
-https://www.microsoft.com/en-us/edge/download?form=MA13FJ
+https://www.microsoft.com/en-us/edge/download
+https://www.pgadmin.org/download/pgadmin-4-macos/
+https://www.postgresql.org/download/macosx/
+https://affinity.serif.com/en-us/universal-licence/
+https://download.typora.io/mac/Typora.dmg
+https://www.apachefriends.org/download.html
