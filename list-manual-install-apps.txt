@@ -11,3 +11,5 @@ https://www.postgresql.org/download/macosx/
 https://affinity.serif.com/en-us/universal-licence/
 https://download.typora.io/mac/Typora.dmg
 https://www.apachefriends.org/download.html
+https://www.whatsapp.com
+https://discord.com/download

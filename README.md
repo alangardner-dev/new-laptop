@@ -61,11 +61,14 @@ brew install raycast
 
 ### Set up RayCast
 
+- Import Settings
+
 - Settings:
   - Disable Show Spotlight search in System Settings > Keyboard Shortcuts > Spotlight
   - Assign Command-Space bar to Raycast (Raycast Settings)
 - Store:
   - Search Emoji and symbols
+
 
 ## Install Apps via Brew
 
