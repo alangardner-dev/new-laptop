@@ -154,11 +154,11 @@ Download and install from [Mac App Store](https://apps.apple.com/us/genre/mac/id
 Open the Finder's preferences/settings: `cmd +,`
 
 - General: Uncheck all of the items to show on Desktop
+- General: Check: Sync Desktop & Documents
 - Advanced: "When performing a search" - set to "Search this Mac"
 - Advanced: Uncheck "Show warning before changing file extensions".
 - Advanced: Uncheck "Show warning before changing an extension"
 - Advanced: Uncheck "Show warning before emptying trash"
-- Search default: change to "Search this Mac".
 - Enable: Menu > View > Show Path Bar.
 - Enable: Menu > View > Show Status Bar.
 
@@ -171,10 +171,12 @@ UI changes:
 
 [Hazel](https://www.noodlesoft.com/hazel.php) is "Automated Organization for Your Mac."
 
-- Configure to move any files in `Downloads` older than a 1 week to the trash.
-- Configure to move any `Screenshot*` files to trash after 5 days.
-- Enable delete files in trash that are greater than 1 week old
+Preferences:
 - Enable App Sweep
+- Enable delete files in trash that are greater than 1 week old
+
+Folder Actions:
+Import `./hazelrules`
 
 ### VS Code
 
@@ -188,7 +190,7 @@ UI changes:
 
 ### Warp
 
-[Warp](https://www.warp.dev) is a terminal written in Rust with built in features for git, AI queries, etc.
+
 
 If you ran the [Install Apps via Brew](#install-apps-via-brew), Warp has already been installed.
 
@@ -211,11 +213,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 #### Settings
 
 - Search: Set DuckDuckGo (DDG) as default search engine.
-- Verify "Use ⌘-1 through ⌘-9 to switch tabs" checked
-- Verify "⌘-click opens a link in a new tab" checked
-- Verify "When a new tab or window opens, make it active" Unchecked
+- Tabs: Verify "Use ⌘-1 through ⌘-9 to switch tabs" checked
+- Tabs: Verify "⌘-click opens a link in a new tab" checked
+- Tabs: Check "When a new tab or window opens, make it active" Unchecked
 - Advanced: Check "Show features for web developers".
-- Enable Vinegar in Extensions.
+- Extensions: Enable Vinegar.
 
 - Enable "Always show Tab Bar" Menu > View
 - Enable "Show Favorite Bar" Menu > View
@@ -244,34 +246,20 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 - Set DDG as default search engine
 
 ## SSH Keys
+Create SSH keys for multiple repos:
 
-Follow the [steps in GitHub's docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-
-```
-ssh-keygen -t ed25519 -C "your_email@example.com"
-```
-
-```
-eval "$(ssh-agent -s)"
-```
-
-```
-touch ~/.ssh/config && echo 'Host github.com
-  AddKeysToAgent yes
-  UseKeychain yes
-  IdentityFile ~/.ssh/id_ed25519' > ~/.ssh/config
-```
-
-```
-ssh-add --apple-use-keychain ~/.ssh/id_ed25519
-```
+1. Edit `./scripts/setup-github-ssh.sh` to set values for `PERSONAL_EMAIL`, `WORK_EMAIL`, `PERSONAL_USERNAME`, and `WORK_USERNAME`
+2. Run `chmod +x ./scripts/setup-github-ssh.sh`
+3. Run `ssh ./scripts/setup-github-ssh.sh`
+4. Verify `config` file set up properly: `touch ~/.ssh/config`
 
 ### Copy key to github
 
 ```
-pbcopy < ~/.ssh/id_ed25519.pub &&
-open https://github.com/settings/keys
+pbcopy < ~/.ssh/id_ed25519.pub
 ```
+`open https://github.com/settings/keys`
+
 
 ## Todo
 
